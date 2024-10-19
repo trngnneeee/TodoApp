@@ -207,13 +207,14 @@ body{
 .modal__main{
     z-index: 99;
     width: 500px;
-    height: 100px;
+    /* height: 100px; */
     background-color: #ddd;
-
+    
     padding: 20px;
     display: flex;
     justify-content: space-between;
     border-radius: 20px;
+    position: relative;
 }
 
 .modal__overlay{
@@ -244,6 +245,17 @@ body{
     cursor: pointer;
 }
 
+@media (max-width: 767.98px){
+    .modal__main{
+        width: 300px;
+    }
+
+    .modal__button{
+        width: 100px;
+        font-size: 14px;
+    }
+}
+
 .modal__content--confirm:hover{
     background-color: #61C601;
     color: white;
@@ -272,6 +284,26 @@ body{
     font-weight: 600;
     font-size: 16px;
     cursor: pointer;
+}
+
+@media (max-width: 767.98px){
+    .modal__content{
+        flex-wrap: wrap;
+    }
+
+    .modal__content input{
+        width: 100%;
+    }
+
+    .modal__button--modify{
+        width: 45%;
+    }
+
+    .modal__close{
+        position: absolute;
+        top: 5px;
+        right: 7px;
+    }
 }
 
 .modal__content input{

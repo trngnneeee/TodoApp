@@ -93,7 +93,7 @@ function showConfirmModify(id) {
 
     ElementConfirm.innerHTML = `
         <div class = "modal__main">
-            <div class = "modal__content">
+            <div class = "modal__content modal__modify">
                 <input class = "modal__input" type = "text" placeholder = "Nhập công việc...">
                 <button class = "modal__button--modify modal__content--confirm">Xác nhận</button>
                 <button class = "modal__button--modify modal__content--cancel">Hủy</button>
