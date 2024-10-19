@@ -18,10 +18,22 @@ body{
 .todo-app{
     border: 1px solid #ddd;
     padding: 20px;
-    width: 40%;
+    width: 80%;
     margin: 30px auto;
     background-color: #F6F5F7;
     border-radius: 10px;
+}
+
+@media(max-width: 991.98px){
+    .todo-app{
+        width: 70%;
+    }
+}
+
+@media(max-width: 767.98px){
+    .todo-app{
+        width: 100%;
+    }
 }
 
 .todo-app .todo-app__title{
@@ -39,8 +51,14 @@ body{
     height: 50px;
     border-radius: 10px;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     background-color: #FFFEFF;
+}
+
+@media(max-width: 767.98px){
+    .todo-app .todo-app__create input{
+        width: 70%;
+    }
 }
 
 .todo-app .todo-app__create input{
@@ -51,7 +69,7 @@ body{
     font-size: 16px;
 }
 
-.todo-app .todo-app__create .submit{
+.submit{
     height: 100%;
     width: 50px;
     border: none;
@@ -59,6 +77,21 @@ body{
     color: white;
     font-size: 20px;
     cursor: pointer;
+}
+
+.button-mobile{
+    width: 100%;
+    border: none;
+    background-color: #FFA400;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    /* display: none; */
 }
 
 .todo-app .todo-app__list{
@@ -76,6 +109,15 @@ body{
     border-radius: 10px;
     background-color: #FFFEFF;
     margin-bottom: 20px;
+}
+
+@media(max-width: 767.98px){
+    .todo-app .todo-app__item{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
 }
 
 .todo-app__item.todo-app__item--complete{

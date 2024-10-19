@@ -187,7 +187,7 @@ onValue(todosRef, (items) => {
 
         let html = `
             <div class="todo-app__item ${data.complete ? "todo-app__item--complete" : ""}">
-                <div class="todo-app__item-content">${data.content}</div>
+                <div class="todo-app__item--content">${data.content}</div>
                 <div class="todo-app__action">
                     <a href = "#" class="todo-app__button todo-app__action--modify" button-modify = "${key}">
                         <i class="fa-solid fa-pen-to-square"></i>
